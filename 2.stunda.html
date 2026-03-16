@@ -81,14 +81,14 @@
     <div class="formBody">
 
 
-      <fieldset>
+      <fieldset >
         <legend>Lietotāja dati</legend>
         <label for="firstname">Jūsu vārds:</label>
-        <input type="text" name="firstname" id="firstname">
+        <input type="text" name="firstname" id="firstname" required minlength="3" maxlength="15" placeholder="Piem.Jānis">
         <label for="email">Jūsu epasts:</label>
         <input type="email" name="email" id="email">
         <label for="password">Izveidot jaunu paroli:</label>
-        <input type="password" name="password" id="password">
+        <input type="password" name="password" id="password" pattern="[A-Za-z,\!,\$,\_,0-9]{6,18}">
         <label for="password">Atkārtot jaunu paroli:</label>
         <input type="password" name="repeat_password" id="password">
       </fieldset>
@@ -113,7 +113,7 @@
           <option value="AUDI">AUDI</option>
         </select>
         <label for="photo">Jūsu profila bilde</label>
-        <input type="file" name="photo" id="photo">
+        <input type="file" name="photo" id="photo" accept="image/*">
       </fieldset>
     </div>
     <div class="formFooter">
