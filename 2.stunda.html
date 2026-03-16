@@ -53,30 +53,50 @@
   <h1>Formas</h1>
 
   <form action="">
-    <fieldset>
-      <legend>Lietotāja dati</legend>
-      <label for="firstname">Jūsu vārds:</label>
-      <input type="text" name="firstname" id="firstname">
-      <label for="email">Jūsu epasts:</label>
-      <input type="email" name="email" id="email">
-      <label for="password">Izveidot jaunu paroli:</label>
-      <input type="password" name="password" id="password">
-      <label for="password">Atkārtot jaunu paroli:</label>
-      <input type="password" name="repeat_password" id="password">
-    </fieldset>
+    <div class="formHeader">
+
+    </div>
+    <div class="formBody">
 
 
-    <fieldset>
-      <legend>Par sevi:</legend>
-      <label for="date">Jūsu dzimšanas datums:</label>
-      <input type="date" name="date" id="date">
-      <label for="color">Jūsu miļāka krāsa</label>
-      <input type="color" name="color" id="color">
-      
+      <fieldset>
+        <legend>Lietotāja dati</legend>
+        <label for="firstname">Jūsu vārds:</label>
+        <input type="text" name="firstname" id="firstname">
+        <label for="email">Jūsu epasts:</label>
+        <input type="email" name="email" id="email">
+        <label for="password">Izveidot jaunu paroli:</label>
+        <input type="password" name="password" id="password">
+        <label for="password">Atkārtot jaunu paroli:</label>
+        <input type="password" name="repeat_password" id="password">
+      </fieldset>
 
 
+      <fieldset>
+        <legend>Par sevi:</legend>
+        <label for="date">Jūsu dzimšanas datums:</label>
+        <input type="date" name="date" id="date">
+        <label for="color">Jūsu miļāka krāsa</label>
+        <input type="color" name="color" id="color">
+        <label for="bio">Jūsu biogrāfija:</label>
+        <textarea name="bio" id="bio"></textarea>
 
-    </fieldset>
+        <input type="checkbox" value="true" name="agree" id="agree">
+        <label for="agree">piekrītu lietošanas noteikumiem</label>
+        <label for="auto">Jūsu automašīnas marka</label>
+        <select name="auto" id="auto">
+          <option value=""></option>
+          <option value="BMW">BMW</option>
+          <option value="Mercedes">Mercedes</option>
+          <option value="AUDI">AUDI</option>
+        </select>
+        <label for="photo">Jūsu profila bilde</label>
+        <input type="file" name="photo" id="photo">
+      </fieldset>
+    </div>
+    <div class="formFooter">
+      <input type="submit" value="Saglabāt">
+    </div>
 
   </form>
 
