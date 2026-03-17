@@ -49,12 +49,27 @@ section{
 
 }
 section#sec1{
-    
-}
-section#sec2{
+    background-color: #F2DC5D;
 
+    img{
+        width:100%;
+        /* aspect-ratio: 3/4; */
+    }
+
+}
+
+
+section#sec2{
+    background-color: #F2A359;
 }
 section#sec3{
+    color:white;
+    background-color: #A4031F;
+}
 
+
+footer{
+    color:white;
+    background-color: #240B36;
 }
 
