@@ -52,8 +52,6 @@ section{
 
     border:2px solid #ffffff;
     box-shadow: 3px 4px 13px 0px grey;
-
-
 }
 section#sec1{
     background-color: #F2DC5D;
@@ -128,6 +126,38 @@ button{
     border:1px box rgb(107, 107, 107);
     border-radius: 5px;
     cursor: pointer;
+}
+button:hover{
+    background-color: #d1e1fc;
+}
+
+
+form{
+    label,input,textarea{
+        display: block;
+    }
+
+    label{
+        margin-top: 10px;
+    }
+    input,select,textarea{
+        padding: 5px;
+        font-size: 16px;
+        border:1px solid rgb(188, 188, 188);
+        background-color: #eeeeee;
+
+    }
+
+    input:focus-visible,select:focus-visible,textarea:focus-visible{
+        outline:2px solid rgb(4, 226, 71);
+        background-color: #fffdfd;
+    }
+
+    textarea{
+        resize: none;
+        height:300px;
+    }
+
 }
 
 
