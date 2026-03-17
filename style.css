@@ -18,3 +18,43 @@ nav a{
     text-decoration: none;
 }
 
+header{
+    position: relative;
+}
+
+header h1{
+    text-align: center;
+    color:black;
+}
+
+header .logo_image{
+        position: absolute;
+        top: -13px;
+        left:17rem;
+
+}
+
+section{
+    /* atlasa visas sekcijas */
+    width:65%;
+    border:2px solid red;
+
+    margin:50px;
+    margin:50px 100px;
+    margin: 50px auto;
+
+    padding:30px;
+    padding:30px 50px;
+
+
+}
+section#sec1{
+    
+}
+section#sec2{
+
+}
+section#sec3{
+
+}
+
