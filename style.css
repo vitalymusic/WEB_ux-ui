@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Trade+Winds&display=swap');
+
+
+
 body{
     background-color: #d0d0d0;
     margin:0px;
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 18px;
 }
 
@@ -37,7 +41,7 @@ header .logo_image{
 section{
     /* atlasa visas sekcijas */
     width:65%;
-    border:2px solid red;
+    
 
     margin:50px;
     margin:50px 100px;
@@ -45,6 +49,9 @@ section{
 
     padding:30px;
     padding:30px 50px;
+
+    border:2px solid #ffffff;
+    box-shadow: 3px 4px 13px 0px grey;
 
 
 }
@@ -65,11 +72,24 @@ section#sec2{
 section#sec3{
     color:white;
     background-color: #A4031F;
+    background-image: url('img/Images.png');
+    background-image: linear-gradient(18deg, #b80827, #5c0211);
+
 }
 
 
 footer{
     color:white;
     background-color: #240B36;
+    padding: 20px;
+    text-align: center;
+
+}
+
+header h1{
+
+    font-family: "Trade Winds", system-ui;
+    font-size: 3rem;
+
 }
 

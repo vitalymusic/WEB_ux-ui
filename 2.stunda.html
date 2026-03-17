@@ -15,123 +15,144 @@
   <nav>
     <!-- DIV atdalīšanas elements (bloks) -->
     <div>
-    <!-- te būs navigācija -->
-     <a href="index.html#sec1">Izglītība</a>
-     <a href="index.html#sec2">Prasmes</a>
-     <a href="index.html#sec3">Hobiji</a>
-     <a href="2.stunda.html">2.stunda</a>
+      <!-- te būs navigācija -->
+      <a href="index.html#sec1">Izglītība</a>
+      <a href="index.html#sec2">Prasmes</a>
+      <a href="index.html#sec3">Hobiji</a>
+      <a href="2.stunda.html">2.stunda</a>
 
     </div>
     <div>
       <a href="https://facebook.com" style="text-decoration: none;">
         <img src="./img/facebook.svg" alt="" style="height:35px">
-     </a>
-     <a href="https://instagram.com" style="text-decoration: none;">
-       <img src="./img/instagram.svg" alt="" style="height:35px">
-     </a>
+      </a>
+      <a href="https://instagram.com" style="text-decoration: none;">
+        <img src="./img/instagram.svg" alt="" style="height:35px">
+      </a>
     </div>
-     
+
 
   </nav>
 
-  <h1>Tabulas</h1>
+  <section>
+    <h1>Tabulas</h1>
 
-  <table>
-    <thead>
-      <tr>
-        <td>N.p.k.</td>
-        <td>Vārds</td>
-        <td>Epasts</td>
-        <td>Darbības</td>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1.</td>
-        <td>Jānis Ozoliņš</td>
-        <td>user1@inbox.lv</td>
-        <td>
-          <button>Redigēt lietotāju</button>
-        </td>
-      </tr>
-      <tr>
-        <td>2.</td>
-        <td>Anna Lapiņa</td>
-        <td>user2@inbox.lv</td>
-        <td>
-          <button>Redigēt lietotāju</button>
-        </td>
-      </tr>
-    </tbody>
-    <tfoot>
-      <tr>
-        <td colspan="3">Kopā lietotāju:</td>
-        <td>2</td>
-      </tr>
-    </tfoot>
-
-
-  </table>
+    <table>
+      <thead>
+        <tr>
+          <td>N.p.k.</td>
+          <td>Vārds</td>
+          <td>Epasts</td>
+          <td>Darbības</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1.</td>
+          <td>Jānis Ozoliņš</td>
+          <td>user1@inbox.lv</td>
+          <td>
+            <button>Redigēt lietotāju</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>Anna Lapiņa</td>
+          <td>user2@inbox.lv</td>
+          <td>
+            <button>Redigēt lietotāju</button>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Kopā lietotāju:</td>
+          <td>2</td>
+        </tr>
+      </tfoot>
 
 
-  <h1>Formas</h1>
+    </table>
+  </section>
 
-  <form action="https://formsubmit.co/vitalijs.korabelnikovs@gmail.com" method="POST" enctype="multipart/form-data">
-    <div class="formHeader">
+  <section>
+    <h1>Formas</h1>
 
-    </div>
-    <div class="formBody">
+    <form action="https://formsubmit.co/vitalijs.korabelnikovs@gmail.com" method="POST" enctype="multipart/form-data">
+      <div class="formHeader">
 
-
-      <fieldset >
-        <legend>Lietotāja dati</legend>
-        <label for="firstname">Jūsu vārds:</label>
-        <input type="text" name="firstname" id="firstname" required minlength="3" maxlength="15" placeholder="Piem.Jānis">
-        <label for="email">Jūsu epasts:</label>
-        <input type="email" name="email" id="email">
-        <label for="password">Izveidot jaunu paroli:</label>
-        <input type="password" name="password" id="password" pattern="[A-Za-z,\!,\$,\_,0-9]{6,18}">
-        <label for="password">Atkārtot jaunu paroli:</label>
-        <input type="password" name="repeat_password" id="password">
-      </fieldset>
+      </div>
+      <div class="formBody">
 
 
-      <fieldset>
-        <legend>Par sevi:</legend>
-        <label for="date">Jūsu dzimšanas datums:</label>
-        <input type="date" name="date" id="date">
-        <label for="color">Jūsu miļāka krāsa</label>
-        <input type="color" name="color" id="color">
-        <label for="bio">Jūsu biogrāfija:</label>
-        <textarea name="bio" id="bio"></textarea>
-
-        <input type="checkbox" value="true" name="agree" id="agree">
-        <label for="agree">piekrītu lietošanas noteikumiem</label>
-        <label for="auto">Jūsu automašīnas marka</label>
-        <select name="auto" id="auto">
-          <option value=""></option>
-          <option value="BMW">BMW</option>
-          <option value="Mercedes">Mercedes</option>
-          <option value="AUDI">AUDI</option>
-        </select>
-        <label for="photo">Jūsu profila bilde</label>
-        <input type="file" name="photo" id="photo" accept="image/*">
-      </fieldset>
-    </div>
-    <div class="formFooter">
-      <input type="submit" value="Saglabāt">
-    </div>
-  </form>
+        <fieldset>
+          <legend>Lietotāja dati</legend>
+          <label for="firstname">Jūsu vārds:</label>
+          <input type="text" name="firstname" id="firstname" required minlength="3" maxlength="15"
+            placeholder="Piem.Jānis">
+          <label for="email">Jūsu epasts:</label>
+          <input type="email" name="email" id="email">
+          <label for="password">Izveidot jaunu paroli:</label>
+          <input type="password" name="password" id="password" pattern="[A-Za-z,\!,\$,\_,0-9]{6,18}">
+          <label for="password">Atkārtot jaunu paroli:</label>
+          <input type="password" name="repeat_password" id="password">
+        </fieldset>
 
 
-  <h1>Google maps</h1>
+        <fieldset>
+          <legend>Par sevi:</legend>
+          <label for="date">Jūsu dzimšanas datums:</label>
+          <input type="date" name="date" id="date">
+          <label for="color">Jūsu miļāka krāsa</label>
+          <input type="color" name="color" id="color">
+          <label for="bio">Jūsu biogrāfija:</label>
+          <textarea name="bio" id="bio"></textarea>
 
-  <iframe src="https://ss.com" frameborder="0" width="100%" height="500px"></iframe>
+          <input type="checkbox" value="true" name="agree" id="agree">
+          <label for="agree">piekrītu lietošanas noteikumiem</label>
+          <label for="auto">Jūsu automašīnas marka</label>
+          <select name="auto" id="auto">
+            <option value=""></option>
+            <option value="BMW">BMW</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="AUDI">AUDI</option>
+          </select>
+          <label for="photo">Jūsu profila bilde</label>
+          <input type="file" name="photo" id="photo" accept="image/*">
+        </fieldset>
+      </div>
+      <div class="formFooter">
+        <input type="submit" value="Saglabāt">
+      </div>
+    </form>
+  </section>
 
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2176.6662294873363!2d24.1615275!3d56.9373861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecf2881ab3a2d%3A0x38f05fb5534b5b16!2zRWlyb3BhcyBUxIFsbcSBY8SrYmFzIGNlbnRycw!5e0!3m2!1slv!2slv!4v1773682708931!5m2!1slv!2slv" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <section>
+    <h1>Google maps</h1>
 
-  <h1>Youtube</h1>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/Ma3mJ2R6OXo?si=_b6xDpA_EC1FHO1q&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe src="https://ss.com" frameborder="0" width="100%" height="500px"></iframe>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2176.6662294873363!2d24.1615275!3d56.9373861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecf2881ab3a2d%3A0x38f05fb5534b5b16!2zRWlyb3BhcyBUxIFsbcSBY8SrYmFzIGNlbnRycw!5e0!3m2!1slv!2slv!4v1773682708931!5m2!1slv!2slv"
+      width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <h1>Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ma3mJ2R6OXo?si=_b6xDpA_EC1FHO1q&amp;controls=0"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </section>
+
+
+
+
+
+
+
+  <footer>
+    <p>Visas tiesibas aizsargātas &copy;</p>
+  </footer>
 </body>
 
 </html>
