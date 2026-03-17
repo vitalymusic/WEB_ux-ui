@@ -93,3 +93,46 @@ header h1{
 
 }
 
+
+/* 2.lapa */
+
+table, tr,td{
+    border:1px solid black;
+    border-collapse: collapse;
+}
+table td{
+    padding: 2px 5px;
+}
+
+thead{
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+}
+tfoot{
+    background-color: black;
+    text-align: center;
+    font-weight: bold;
+    color:white;
+}
+table{
+    width: 75%;
+    margin: 0px auto;
+}
+
+button{
+    background-color: #f3f7fe;
+    color: #3b82f6;
+    padding: 10px;
+    font-weight: bold;
+    border:1px box rgb(107, 107, 107);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
