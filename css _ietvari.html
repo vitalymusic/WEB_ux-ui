@@ -7,7 +7,10 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css"> -->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css"
+    >
 
 
 
@@ -17,6 +20,16 @@
 <body>
     <header>
         te ir hederis
+        <nav>
+            <ul>
+                <li><strong class="pico-color-red-450">Acme Corp</strong></li>
+            </ul>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Products</a></li>
+            </ul>
+        </nav>
     </header>
     <div class="container">
         <h1>CSS ietvari</h1>
@@ -49,7 +62,7 @@
         <hr />
 
         <details name="example">
-            <summary>Accordion 2</summary>
+            <summary>Otrā sadaļa</summary>
             <ul>
                 <li>Pirmais</li>
                 <li>Otrais</li>
@@ -59,7 +72,7 @@
 
     </div>
 
-    <footer>
+    <footer class="pico-background-zinc-900 " style="text-align: center;">
         te ir futeris
     </footer>
 </body>
