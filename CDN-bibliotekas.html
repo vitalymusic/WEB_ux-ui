@@ -26,6 +26,9 @@
         integrity="sha512-kwJUhJJaTDzGp6VTPBbMQWBFUof6+pv0SM3s8fo+E6XnPmVmtfwENK0vHYup3tsYnqHgRDoBDTJWoq7rnQw2+g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+        <link rel="stylesheet" href="modal.css">
+
+
     <title>Document</title>
 
     <style>
@@ -218,6 +221,7 @@
 
     <section>
         <h1 class="big_title">Mūsu komanda</h1>
+        <button id="openModalBtn" class="trigger-btn">Sākt reģistrāciju</button>
         <div class="container team">
             <div class="col">
                 <img src="https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?semt=ais_hybrid&w=740&q=80"
@@ -293,12 +297,57 @@
 
 
     <!-- Modalais logs -->
-    <div class="modal">
-        <div class="modal-inner">
-            <a data-modal-close>Close</a>
-            <div class="modal-content">
-                <h3>Reģistrācijas forma</h3>
+    <div id="regModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Izveidot kontu</h2>
+                <span class="close-btn">&times;</span>
             </div>
+            
+            <form id="registrationForm">
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="fname">Vārds</label>
+                        <input type="text" id="fname" placeholder="Jānis" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="lname">Uzvārds</label>
+                        <input type="text" id="lname" placeholder="Bērziņš" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">E-pasts</label>
+                    <input type="email" id="email" placeholder="piemers@epasts.lv" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Tālrunis</label>
+                    <input type="tel" id="phone" placeholder="+371 20000000" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="address">Adrese</label>
+                    <input type="text" id="address" placeholder="Ielas nosaukums, mājas nr." required>
+                </div>
+
+                <div class="input-group">
+                    <label for="city">Pilsēta</label>
+                    <select id="city" required>
+                        <option value="" disabled selected>Izvēlieties pilsētu</option>
+                        <option value="riga">Rīga</option>
+                        <option value="daugavpils">Daugavpils</option>
+                        <option value="liepaja">Liepāja</option>
+                        <option value="jelgava">Jelgava</option>
+                        <option value="ventspils">Ventspils</option>
+                        <option value="valmiera">Valmiera</option>
+                        <option value="jekabpils">Jēkabpils</option>
+                        <option value="rezekne">Rēzekne</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="submit-btn">Reģistrēties</button>
+            </form>
         </div>
     </div>
 
@@ -321,6 +370,8 @@
     <script type="text/javascript">
         lightGallery(document.getElementById('lightgallery')); 
     </script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
