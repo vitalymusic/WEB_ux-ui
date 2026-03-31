@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"
+        integrity="sha512-b4rL1m5b76KrUhDkj2Vf14Y0l1NtbiNXwV+SzOzLGv6Tz1roJHa70yr8RmTUswrauu2Wgb/xBJPR8v80pQYKtQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lg-fb-comment-box.min.css"
+        integrity="sha512-JeQRe3W6dq6H+AAnkomgU8XWGCTM53GmkoYb/R8nmHNOk8xWLwt8bzQmT2cr1Ra0I/WaSTiBOmQOkj7iHXi//w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lg-transitions.min.css"
+        integrity="sha512-/kdQdrZJ0rc181QhzXU6oIknhyr5NIuZlv4VzvhdDsiEzEbW9mckFGTqat8CM8FlGDCHMMUYity1gXIgjHJ58A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
+        integrity="sha512-kwJUhJJaTDzGp6VTPBbMQWBFUof6+pv0SM3s8fo+E6XnPmVmtfwENK0vHYup3tsYnqHgRDoBDTJWoq7rnQw2+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            font-size: 16px;
+            /* Sākotnējo atkāpju atiestatīšana */
+        }
+
+        .container {
+            display: flex;
+            width: 65%;
+            margin: auto;
+            gap: 50px;
+        }
+
+
+
+        .team img {
+            width: 100%;
+        }
+
+        .team p {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .team h3 {
+            /* padding: 10px; */
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .team h5 {
+            /* padding: 10px; */
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .team .col {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 10px 10px rgba(128, 128, 128, 0.489);
+            padding-bottom: 20px;
+            background: white;
+            /* margin:20px */
+        }
+
+
+        .background1 {
+            position: absolute;
+            width: 100%;
+            height: 400px;
+            background-color: #863EF4;
+            top: 0px;
+            z-index: -1;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+        }
+
+        .big_title {
+            font-size: 5rem;
+            text-align: center;
+            font-weight: 100;
+            margin: 50px 0px;
+            color: white;
+        }
+
+
+
+
+
+
+        .contacts {
+            margin-top: 150px;
+
+
+            .image img {
+                width: 100%;
+                clip-path: inset(11% 0 0 0);
+                transform: translate(0px, -46px);
+
+            }
+
+            .image {
+                width: 50%;
+            }
+
+            .form {
+                width: 50%;
+            }
+
+            .big_title {
+                color: #863EF4;
+                font-size: 2rem;
+                font-weight: 900;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                padding: 10px 20px;
+                text-align: center;
+            }
+
+
+            form {
+                display: flex;
+                flex-direction: column;
+
+                input,
+                textarea,
+                button {
+                    font-size: 16px;
+                    padding: 5px 10px;
+                    margin-bottom: 20px;
+                    border: 1px solid #863EF4;
+                    border-radius: 5px;
+                }
+
+                textarea {
+                    height: 250px;
+                }
+
+                button {
+                    background-color: #863EF4;
+                    color: white;
+                }
+
+
+
+
+
+            }
+
+
+
+
+        }
+
+
+
+        /* Adaptīvais dizains */
+
+        @media screen and (max-width:760px) {
+
+            .big_title {
+                font-size: 3.5rem;
+            }
+
+            .container {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .contacts {
+                .col {
+                    width: 90%;
+                    margin: auto;
+                }
+
+            }
+
+
+
+
+        }
+
+
+        #lightgallery{
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap:20px;
+
+
+            img{
+                width:100%;
+
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <section>
+        <h1 class="big_title">Mūsu komanda</h1>
+        <div class="container team">
+            <div class="col">
+                <img src="https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?semt=ais_hybrid&w=740&q=80"
+                    alt="">
+                <p>Labs speciālists IT jomā</p>
+                <h3>Jānis Baltiņš</h3>
+                <h5>Direktors</h5>
+            </div>
+            <div class="col">
+                <img src="https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?semt=ais_hybrid&w=740&q=80"
+                    alt="">
+                <p>Labs speciālists IT jomā</p>
+                <h3>Jānis Baltiņš</h3>
+                <h5>Direktors</h5>
+            </div>
+            <div class="col">
+                <img src="https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?semt=ais_hybrid&w=740&q=80"
+                    alt="">
+                <p>Labs speciālists IT jomā</p>
+                <h3>Jānis Baltiņš</h3>
+                <h5>Direktors</h5>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="contacts">
+
+        <div class="container">
+            <div class="col image" data-aos="fade-right">
+                <img src="https://img.freepik.com/free-photo/group-graphic-designers-using-digital-tablet_1170-772.jpg?semt=ais_hybrid&w=740&q=80"
+                    alt="">
+            </div>
+            <div class="col form" data-aos="fade-left">
+                <h1 class="big_title">Mūsu kontakti</h1>
+                <p>Šajā lapā atradīsiet mūsu kontaktformu</p>
+
+                <form action="" class="contactForm">
+                    <input type="text" name="" id="" placeholder="Jūsu vārds">
+                    <input type="email" name="" id="" placeholder="Jūsu ēpasts">
+                    <textarea name="" id="" placeholder="Ziņa"></textarea>
+                    <button type="submit">Nosūtīt ziņu</button>
+                </form>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section>
+        <div id="lightgallery">
+            <a href="https://picsum.photos/id/4/500">
+                <img src="https://picsum.photos/id/4/500" />
+            </a>
+            <a href="https://picsum.photos/id/5/500">
+                <img src="https://picsum.photos/id/5/500" />
+            </a>
+            <a href="https://picsum.photos/id/6/500">
+                <img src="https://picsum.photos/id/6/500" />
+            </a>
+            <a href="https://picsum.photos/id/7/500">
+                <img src="https://picsum.photos/id/7/500" />
+            </a>
+        </div>
+
+    </section>
+
+    <!-- Dizaina elementi -->
+    <div class="background1"></div>
+
+
+    <!-- Modalais logs -->
+    <div class="modal">
+        <div class="modal-inner">
+            <a data-modal-close>Close</a>
+            <div class="modal-content">
+                <h3>Reģistrācijas forma</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script>
+        Swal.fire({
+            title: "The Internet?",
+            text: "That thing is still around?",
+            icon: "question"
+        });
+    </script>
+
+    <script type="text/javascript">
+        lightGallery(document.getElementById('lightgallery')); 
+    </script>
+</body>
+
+</html>
