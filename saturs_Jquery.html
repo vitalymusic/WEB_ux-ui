@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
     <style>
         * {
@@ -158,6 +159,29 @@
             }
         }
 
+
+
+        .izcelts1{
+            color:red;
+            transform: rotate(10deg);
+            transition: 1s;
+        }
+        .izcelts2{
+            color:rgb(0, 255, 85);
+            transform: rotate(-10deg);
+        }
+
+        .overlay{
+            position: fixed;
+            top:10px;
+            right:20px;
+            width:300px;
+            height:300px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px black;
+            background-color: #863EF4;
+        }
+
     </style>
 </head>
 
@@ -165,6 +189,7 @@
 
 
     <section>
+        <button class="settings_btn">Settings</button>
         <h1 class="big_title">Mūsu komanda</h1>
         <div class="container team">
             <div class="col">
@@ -219,6 +244,76 @@
     <!-- Dizaina elementi -->
     <div class="background1"></div>
 
+
+    <div class="overlay">
+        <input type="text" name="" id="document_name">
+    </div>
+
+
+
+    <script>
+        $(function(){
+
+        // elementu atlase no lapas
+
+        // $('.big_title').css("color","red");
+        $('.big_title').css({
+            textDecoration:"underline",
+            fontSize:"50pt"
+        });
+         $('.big_title').hide();
+         $('.big_title').show();
+         $('.big_title').fadeOut();
+         $('.big_title').fadeIn();
+         $('.big_title').slideUp();
+         $('.big_title').slideDown();
+        //  $('.big_title').slideToggle();
+
+        //   $('.big_title').animate({
+        //     fontSize:"30pt",
+        //     color:"red",
+        //     transform:"rotate(360deg)"
+        //   },2000).fadeOut(5000)
+
+
+        //   Manipulācija ar CSS klasēm
+
+        $('.big_title')
+            .addClass("izcelts1")
+            .addClass("izcelts2")
+            .removeClass("izcelts1")
+            .toggleClass("izcelts1")
+
+
+         $('.big_title').click(function(){
+            $('body').css({
+                backgroundImage:"linear-gradient(blue,red)"
+            })
+         })
+
+         $('.team img').mouseover(function(){
+             $('.big_title').css("transform","scale(0.5)")
+
+         })
+         $('.team img').mouseleave(function(){
+             $('.big_title').css("transform","scale(1)")
+         })
+
+
+
+
+         $('.overlay').hide();
+         $('.settings_btn').click(function(){
+              $('.overlay').slideToggle(500)  
+         })
+
+
+
+    });
+
+
+
+    </script>
 </body>
 
 </html>
