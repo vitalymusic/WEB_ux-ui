@@ -306,6 +306,55 @@
          $('.settings_btn').click(function(){
               $('.overlay').slideToggle(500)  
          })
+         $('#document_name').keyup(function(){
+            teksts =  $(this).val()
+            $('.big_title').text(teksts)
+            $('title').text(teksts)
+
+         })
+
+         $('.team h3').dblclick(function(){
+            html = "<h1>Jauns lietotājs</h1>"
+           $(this).html(html)
+           
+         })
+
+
+
+        //  Elementu atribūtu maiņa
+
+        $('img').mouseover(function(){
+                src = $(this).attr("src");
+              $('body').css("background-image",`url(${src})`)
+        })
+
+        $('img').mouseleave(function(){
+                src = "";
+              $('body').css("background-image",`url(${src})`)
+        })
+
+
+
+
+
+        $(document).on('mousemove', function(e) {
+                // e.pageX - horizontālā pozīcija no lapas kreisās malas
+                // e.pageY - vertikālā pozīcija no lapas augšas
+                
+                let x = e.pageX;
+                let y = e.pageY;
+
+                x = e.pageX-731;
+                y = e.pageY-350;
+
+                $('body').css("background-position",`${x/10}px ${y/10}px`)
+
+                console.log("X: " + x + ", Y: " + y);
+                
+                // Piemērs: parādām koordinātas kādā elementā
+                $('.big_title').text(`X: ${x}, Y: ${y}`);
+        });
+
 
 
 
