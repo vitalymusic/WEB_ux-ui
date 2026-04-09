@@ -182,12 +182,15 @@
             background-color: #863EF4;
         }
 
+
+    .languages{
+        float: right;
+        padding: 30px;
+    }
     </style>
 </head>
 
 <body>
-
-
     <section>
         <button class="settings_btn">Settings</button>
         <div class="languages">
@@ -367,8 +370,34 @@
                 console.log("X: " + x + ", Y: " + y);
                 
                 // Piemērs: parādām koordinātas kādā elementā
-                $('.big_title').text(`X: ${x}, Y: ${y}`);
+                // $('.big_title').text(`X: ${x}, Y: ${y}`);
         });
+
+
+        // Valodas
+
+        $('.btn_lv').click(function(){
+            $("span:lang(en)").hide();
+            $("span:lang(lv)").show();
+            localStorage.setItem("lang","lv")
+        })
+        $('.btn_en').click(function(){
+            $("span:lang(en)").show();
+            $("span:lang(lv)").hide();
+             localStorage.setItem("lang","en")
+        })
+
+        // lang = localStorage.getItem("lang");
+        // if(lang){
+        //     $('.btn_'+lang)
+        // }else{
+        //     $('.btn_lv').click();
+        // }
+
+       lang = localStorage.getItem("lang")?localStorage.getItem("lang"):"lv";
+
+        $('.btn_'+lang).click();
+
 
 
 
